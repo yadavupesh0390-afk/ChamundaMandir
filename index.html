@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>माँ चामुण्डा स्थान | पचही</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#fff7f0;
+}
+
+/* TOP BAR */
+.topbar{
+  background:linear-gradient(90deg,#000,#8B0000,#000);
+  color:#fff;
+  text-align:center;
+  padding:5px;
+  font-size:12px;
+  letter-spacing:0.5px;
+  font-weight:500;
+}
+
+/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  background:rgba(139,0,0,0.95);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 20px;
+  color:#fff;
+  z-index:1000;
+}
+
+/* LEFT (empty spacer) */
+.nav-left{
+  flex:1;
+}
+
+/* CENTER LOGO */
+.logo{
+  flex:1;
+  text-align:center;
+  font-size:18px;
+  font-weight:600;
+}
+
+/* RIGHT MENU */
+.nav-right{
+  flex:1;
+  display:flex;
+  justify-content:flex-end;
+  list-style:none;
+  gap:10px;
+}
+
+/* LINKS */
+.nav-right li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  position:relative;
+}
+
+/* HOVER EFFECT */
+.nav-right li a::after{
+  content:'';
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:#FFD700;
+  left:0;
+  bottom:-4px;
+  transition:0.3s;
+}
+
+.nav-right li a:hover::after{
+  width:100%;
+}
+
+.nav-right li a:hover{
+  color:#FFD700;
+}
+
+/* NOTICE */
+.notice{
+  background:#ffcc00;
+  overflow:hidden;
+  white-space:nowrap;
+  padding:8px 0;
+}
+
+
+.notice span{
+  display:inline-block;
+  animation:scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+  from{transform:translateX(100%);}
+  to{transform:translateX(-100%);}
+}
+
+/* HERO */
+.hero{
+  height:40vh;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1580136600427-74676d1e3d0b') center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+}
+
+.hero h1{
+  font-size:42px;
+}
+
+/* SECTION */
+section{
+  padding:50px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  color:#8B0000;
+  margin-bottom:20px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  line-height:1.7;
+}
+
+/* BUTTON */
+button{
+  background:#8B0000;
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  border-radius:5px;
+  margin-top:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#FF4500;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:10px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+.gallery img:hover{
+  transform:scale(1.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+/* QR */
+.qr{
+  width:180px;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:18px;
+}
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .nav-left{
+    display:none;
+  }
+
+  .logo{
+    text-align:center;
+    margin-bottom:8px;
+  }
+
+  .nav-right{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+}
+  .hero-content p{
+  font-size:16px;
+  margin:10px 0 20px;
+}
+
+.hero-btns a{
+  text-decoration:none;
+  padding:10px 18px;
+  border-radius:5px;
+  margin:5px;
+  display:inline-block;
+}
+
+.btn-primary{
+  background:#FFD700;
+  color:#000;
+  font-weight:600;
+}
+
+.btn-secondary{
+  background:#fff;
+  color:#8B0000;
+  font-weight:600;
+}
+  .review-box{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.review-item{
+  border-bottom:1px solid #eee;
+  padding:10px 0;
+}
+
+.review-item h4{
+  color:#8B0000;
+}
+
+.review-box input,
+.review-box textarea{
+  width:100%;
+  margin-top:10px;
+  padding:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  font-family:Poppins;
+}
+
+.review-box textarea{
+  height:80px;
+}
+  .schedule-box{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.schedule-box h3{
+  color:#8B0000;
+  margin-bottom:10px;
+}
+
+.schedule-item{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px dashed #ddd;
+  font-size:15px;
+}
+
+.schedule-item span{
+  color:#333;
+}
+
+.schedule-item strong{
+  color:#000;
+}
+
+.schedule-item.special{
+  background:#fff3cd;
+  padding:10px;
+  border-radius:6px;
+  border:none;
+  margin-top:5px;
+}
+
+.note{
+  margin-top:15px;
+  font-size:14px;
+  text-align:center;
+}
+
+.note a{
+  color:#8B0000;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+
+
+<nav>
+  <div class="nav-left"></div>
+
+  <h3 class="logo">🚩 चामुण्डा स्थान</h3>
+
+  <ul class="nav-right">
+    <li><a href="#about">परिचय</a></li>
+    <li><a href="#mahatmya">महात्म्य</a></li>
+    <li><a href="#gallery">गैलरी</a></li>
+    <li><a href="#video">वीडियो</a></li>
+    <li><a href="#donation">दान</a></li>
+    <li><a href="#contact">संपर्क</a></li>
+  </ul>
+</nav>
+<div class="topbar">
+Chamunda Hi Tech | Chamunda Traders 
+</div>
+<div class="notice">
+<span>🔔 नवरात्रि विशेष: भव्य पूजा एवं भंडारा आयोजित</span>
+</div>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>जय माँ चामुण्डा</h1>
+    <p>भक्ति • शक्ति • सिद्धि</p>
+
+    <div class="hero-btns">
+      <a href="#donation" class="btn-primary">🙏 दान करें</a>
+      <a href="#contact" class="btn-secondary">📍 दर्शन करें</a>
+    </div>
+  </div>
+</div>
+<section>
+<h2>🙏 भक्तों का विश्वास</h2>
+
+<div class="card" style="text-align:center">
+
+<h3>🔱 25,000+ भक्त जुड़ चुके हैं</h3>
+<p>हर साल हजारों श्रद्धालु यहाँ दर्शन के लिए आते हैं</p>
+
+<br>
+
+<p>⭐ “यहाँ आकर मन को शांति मिलती है”</p>
+<p>⭐ “माँ चामुण्डा की कृपा से मनोकामना पूर्ण हुई”</p>
+
+</div>
+</section>
+<section id="about">
+<h2>📖 मंदिर परिचय</h2>
+<div class="card">
+यह पवित्र शक्तिपीठ मधुबनी जिला के पचही गाँव में स्थित है।
+</div>
+</section>
+<section>
+<h2>🙏 आज के दर्शन</h2>
+
+<div class="card" style="text-align:center">
+<h1 id="counter">100</h1>
+<p>आज इतने श्रद्धालु दर्शन कर चुके हैं</p>
+</div>
+</section>
+<!-- MAHATMYA (same as yours, no change) -->
+<!-- MAHATMYA -->
+<section id="mahatmya">
+<h2>✨ महात्म्य</h2>
+
+<div class="card">
+
+<!-- SHORT STORY -->
+<div id="shortText1">
+🚩🙏 जय माँ चामुण्डा ! जय माँ दुर्गा !! जय माँ मङ्गला !!! 🙏🚩<br><br>
+लगभग 12वीं शताब्दी में पचही ग्राम में वर्धमान उपाध्याय एक महान सिद्ध साधक थे।  
+माँ त्रिपुरा तीन कन्याओं — चामुण्डा, मंगला, दुर्गा — के रूप में अवतरित हुईं।  
+मुगल सैनिकों के आक्रमण पर तीनों देवियाँ पृथ्वी में समाहित हो गईं।
+</div>
+
+<div id="fullText1" style="display:none;">
+<br>
+⚡ इसके बाद आज भी यहाँ चमत्कार होते हैं:<br>
+• मनोकामना पूर्ण होती है<br>
+• प्रेत बाधा समाप्त होती है<br>
+• यहाँ विशेष पूजा एवं कन्या पूजन होता है<br>
+</div>
+
+<button onclick="toggle1()" id="btn1">🔽 अधिक पढ़ें</button>
+
+<hr style="margin:10px 0">
+
+<!-- LONG MAHATMYA -->
+<div id="shortText2">
+!! नमश्चण्डिकायै!! नमश्चामुण्डायै !!<br>
+जय माँ चामुण्डा, जय माँ मङ्गला, जय माँ दुर्गा 🙏<br><br>
+
+पावन पचही गाम में चामुण्डा अवतार।  
+यह स्थान साक्षात सिद्ध शक्तिपीठ है।
+</div>
+
+<div id="fullText2" style="display:none; margin-top:15px; line-height:1.7">
+
+🚩🚩🚩🚩🚩<br>
+।।श्री: पातु माम्।।<br><br>
+
+जय त्वं देवि चामुण्डे ! जय भूतार्ति हारिणी ।<br>
+जय सर्वगते देवि कालरात्रि नमोस्तुते ।।<br><br>
+
+📖 **अवतार कथा:**<br>
+पं० वर्धमान उपाध्याय जी के तप से प्रसन्न होकर  
+माँ त्रिपुरा ने तीन कन्याओं के रूप में अवतार लिया:<br><br>
+
+👉 माँ चामुण्डा<br>
+👉 माँ मङ्गला<br>
+👉 माँ दुर्गा<br><br>
+
+⚡ मुगल आक्रमण के समय धरती फट गई  
+और तीनों देवियाँ उसमें समा गईं।<br><br>
+
+🌸 बाद में पिता को दर्शन देकर कहा —  
+“हम यहाँ सदैव निवास करेंगी”<br><br>
+
+🔥 चमत्कार:<br>
+• गंगा प्रकट होना<br>
+• सूखा पेड़ जीवित होना (1976)<br>
+• प्रेत बाधा समाप्त होना<br><br>
+
+🙏 यह स्थान भविष्य में कामाख्या जैसा शक्तिपीठ बनने की मान्यता रखता है।
+
+</div>
+
+<button onclick="toggle2()" id="btn2">📖 पूरा पढ़ें</button>
+
+</div>
+</section>
+<section id="gallery">
+<h2>📰 गैलरी</h2>
+<div class="gallery">
+<img src="news1.jpg">
+<img src="news2.jpg">
+</div>
+</section>
+
+<section id="video">
+<h2>🎥 मंदिर दर्शन</h2>
+<div class="card">
+<iframe width="100%" height="300"
+src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+allowfullscreen></iframe>
+</div>
+</section>
+<section id="schedule">
+<h2>🕉️ कार्यक्रम समय सारणी</h2>
+
+<div class="schedule-box">
+
+  <h3>📅 तात्कालिक कार्यक्रम</h3>
+
+  <div class="schedule-item">
+    <span>🌅 प्रातः श्रृंगार आरती</span>
+    <strong>04:00 AM</strong>
+  </div>
+
+  <div class="schedule-item">
+    <span>🎶 भजन / गुणगान</span>
+    <strong>09:00 AM – 05:30 PM</strong>
+  </div>
+
+  <div class="schedule-item">
+    <span>🌇 सायं श्रृंगार आरती</span>
+    <strong>07:00 PM</strong>
+  </div>
+
+  <div class="schedule-item">
+    <span>🌙 शयन आरती</span>
+    <strong>12:00 AM</strong>
+  </div>
+
+  <h3 style="margin-top:20px;">🌺 नवरात्र विशेष</h3>
+
+  <div class="schedule-item special">
+    <span>🔥 दुर्गा अष्टमी जागरण ज्योत</span>
+    <strong>09:00 PM</strong>
+  </div>
+
+  <p class="note">
+  📡 श्रद्धालुओं की सुविधा हेतु आरती एवं दर्शन का सीधा प्रसारण हमारी वेबसाइट पर उपलब्ध है:
+  <br><a href="https://www.chamudamandir.in" target="_blank">www.chamudamandir.in</a>
+  </p>
+
+</div>
+</section>
+<section id="donation">
+<h2>💰 माँ की सेवा में सहयोग</h2>
+
+<div class="card" style="text-align:center">
+
+<p>🙏 आपकी छोटी सी सहायता मंदिर विकास में बड़ा योगदान देती है</p>
+
+<img src="qr.png" class="qr">
+
+<p><b>UPI:</b> yourupi@bank</p>
+
+<a href="https://wa.me/918877974539?text=मैं दान करना चाहता हूँ"
+class="btn-primary">📩 संपर्क करें</a>
+
+</div>
+</section>
+<section id="reviews">
+<h2>⭐ भक्तों के अनुभव</h2>
+
+<div class="review-box">
+
+  <div id="reviewList">
+    <div class="review-item">
+      <h4>🙏 राहुल कुमार</h4>
+      <p>माँ चामुण्डा के दर्शन से मन को शांति मिली। अद्भुत स्थान है।</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:20px;">अपना अनुभव लिखें</h3>
+
+  <input type="text" id="name" placeholder="आपका नाम">
+  <textarea id="message" placeholder="आपका अनुभव"></textarea>
+  <button onclick="addReview()">Submit</button>
+
+</div>
+</section>
+<section id="contact">
+<h2>📞 संपर्क</h2>
+<div class="card">
+📍 पचही, मधुबनी<br><br>
+<iframe src="https://www.google.com/maps?q=pachahi+madhubani&output=embed"
+width="100%" height="250"></iframe><br><br>
+📱 88779 74539
+</div>
+</section>
+
+<a class="whatsapp"
+href="https://wa.me/918877974539?text=जय माँ चामुण्डा 🙏">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+© 2026 माँ चामुण्डा स्थान | Powered by Chamunda Hi Tech
+</footer>
+<script>
+let count = localStorage.getItem("visits") || 0;
+count++;
+localStorage.setItem("visits", count);
+document.getElementById("counter").innerText = count;
+</script>
+<script>
+function toggle1(){
+let x=document.getElementById("fullText1");
+x.style.display = x.style.display==="none"?"block":"none";
+}
+
+function toggle2(){
+let x=document.getElementById("fullText2");
+x.style.display = x.style.display==="none"?"block":"none";
+}
+</script>
+<script>
+document.querySelectorAll(".gallery img").forEach(img=>{
+  img.onclick = ()=>{
+    let popup = document.createElement("div");
+    popup.style.position="fixed";
+    popup.style.top="0";
+    popup.style.left="0";
+    popup.style.width="100%";
+    popup.style.height="100%";
+    popup.style.background="rgba(0,0,0,0.8)";
+    popup.style.display="flex";
+    popup.style.alignItems="center";
+    popup.style.justifyContent="center";
+
+    let image = document.createElement("img");
+    image.src = img.src;
+    image.style.maxWidth="90%";
+    image.style.borderRadius="10px";
+
+    popup.appendChild(image);
+    popup.onclick=()=>popup.remove();
+
+    document.body.appendChild(popup);
+  }
+});
+  <script>
+function addReview(){
+  let name = document.getElementById("name").value;
+  let msg = document.getElementById("message").value;
+
+  if(name === "" || msg === ""){
+    alert("कृपया नाम और अनुभव भरें");
+    return;
+  }
+
+  let div = document.createElement("div");
+  div.className = "review-item";
+
+  div.innerHTML = `<h4>🙏 ${name}</h4><p>${msg}</p>`;
+
+  document.getElementById("reviewList").prepend(div);
+
+  document.getElementById("name").value="";
+  document.getElementById("message").value="";
+}
+</script>
+</script>
+</body>
+</html>
