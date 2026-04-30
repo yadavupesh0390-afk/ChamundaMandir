@@ -331,6 +331,35 @@ footer{
   text-decoration:none;
   font-weight:bold;
 }
+  .service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.service-btn{
+  display:block;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  text-decoration:none;
+  color:#000;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.service-btn:hover{
+  transform:translateY(-5px);
+  border-color:#8B0000;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.service-btn h3{
+  color:#8B0000;
+  margin-bottom:8px;
+}
 </style>
 </head>
 
@@ -382,6 +411,38 @@ Chamunda Hi Tech | Chamunda Traders
 
 <p>⭐ “यहाँ आकर मन को शांति मिलती है”</p>
 <p>⭐ “माँ चामुण्डा की कृपा से मनोकामना पूर्ण हुई”</p>
+
+</div>
+</section>
+  <section>
+<h2>🔰 मंदिर सेवाएं</h2>
+
+<div class="service-grid">
+
+<a href="info.html" class="service-btn">
+<h3>📜 पूरी जानकारी</h3>
+<p>मंदिर का इतिहास और महत्व</p>
+</a>
+
+<a href="places.html" class="service-btn">
+<h3>📍 घूमने की जगह</h3>
+<p>मंदिर के प्रमुख स्थल</p>
+</a>
+
+<a href="pandit.html" class="service-btn">
+<h3>🧘 शास्त्री</h3>
+<p>पंडित एवं पूजा जानकारी</p>
+</a>
+
+<a href="details.html" class="service-btn">
+<h3>🖼️ स्थान</h3>
+<p>फोटो और विवरण</p>
+</a>
+
+<a href="wish.html" class="service-btn">
+<h3>✨ मनोकामना</h3>
+<p>मन्नत एवं विश्वास</p>
+</a>
 
 </div>
 </section>
